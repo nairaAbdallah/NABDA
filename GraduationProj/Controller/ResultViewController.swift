@@ -42,70 +42,73 @@ class ResultViewController: UIViewController {
         if secondRemaining > 0 {
             secondRemaining -= 1
             if secondRemaining == 0 {
-//                let averagergb = averageRGB(bufferImg)
-//                for i in 0..<averagergb.count{
-//                    redmean += averagergb[i][0]
-//                    greenmean += averagergb[i][1]
-//                    bluemean += averagergb[i][2]
-//                }
-//                let hsv = rgb2hsv((red: redmean, green: greenmean, blue: bluemean, alpha: 1.0))
-//                inputs.append(hsv.0)
-//                let filtered = hueFilter.processValue(value: Double(hsv.0))
-//                pulseDetector.addNewValue(newVal: filtered, atTime: CACurrentMediaTime())
-//                let average = self.pulseDetector.getAverage()
-//                let pulse = 60.0/average
-//                if pulse == -60 {
-//                    runLoopTimer()
-//                }else{
-//                    print(pulse)
-//                }
-//                let l = Int(60 * 1.6)
-//                let range = averagergb.count
-//                let val: CGFloat = 0
-//                var H = Array(repeating: val, count: range)
-//                for t in 0..<(abs(range - l)){
-//                    // Step 1: Spatial averaging‏
-//                    let bc = Array<[CGFloat]>(averagergb[t..<abs(t+l-1)])
-//                    let C = transpose(bc)
-//                    //Step 2 : Temporal normalization
-//                    let meanColor = getMeanRow(C)
-//                    let diagMeanColor = Diagonal(meanColor)
-//                    let diagMeanColorInverse: [[CGFloat]] = diagMeanColor.reversed()
-//                    let Cn = multiply(diagMeanColorInverse, C)
-//                    //Step 3 : Projection
-//                    let projectionMatrix: [[CGFloat]] = [[0,1,-1],[-2,1,1]]
-//                    let S = multiply(projectionMatrix, Cn)
-//                    //Step 4: 2D signal to 1D signal
-//
-//                    let stdVectorRes = standardDeviation(arr: S[0]) / standardDeviation(arr: S[1])
-//                    let std = [1.0,stdVectorRes]
-//                    var std2D: [[CGFloat]] = []
-//                    std2D.append(std)
-//                    let P2D = multiply(std2D, S)
-//                    let P = P2D[0]
-//                    //Step 5: OverLap-Adding
-//                    for i in 0..<P.count{
-//                        total = total + P[i]
-//                    }
-//                    let meanP = total/CGFloat(P.count)
-//                    let divP = div(standardDeviation(arr: P), (sub(meanP, P)))
-//                    H[t..<(t+l-1)] = H[t..<(t+l-1)] + divP
-//                }
-//                let h = appendH(H)
-//                let fft = FFT()
-//                let freq = fft.calculate(h, fps: 60)
-//                let powerSpec = fft.powerSpectra(h, 60)
-//                let first = freq.enumerated().filter({ $0.element > 0.9 }).map({ $0.offset })
-//                let last = freq.enumerated().filter({ $0.element < 1.8 }).map({ $0.offset })
-//                let firstIndex = first[0]
-//                let lastIndex = last[last.count-1]
-//                let rangeOfInterest = firstIndex..<(lastIndex)
-//                let maxValue = powerSpec.max()
-//                let maxIndex = powerSpec.firstIndex(of: maxValue!)
-//                let fMax = abs(freq[rangeOfInterest[maxIndex!]])
-//                let _ = fMax * 60
+                let averagergb = averageRGB(bufferImg)
+                for i in 0..<averagergb.count{
+                    redmean += averagergb[i][0]
+                    greenmean += averagergb[i][1]
+                    bluemean += averagergb[i][2]
+                }
+                //BandPassFilter
+                let hsv = rgb2hsv((red: redmean, green: greenmean, blue: bluemean, alpha: 1.0))
+                inputs.append(hsv.0)
+                let filtered = hueFilter.processValue(value: Double(hsv.0))
+                pulseDetector.addNewValue(newVal: filtered, atTime: CACurrentMediaTime())
+                let average = self.pulseDetector.getAverage()
+                let pulse = 60.0/average
+                if pulse == -60 {
+                    runLoopTimer()
+                }else{
+                    print(pulse)
+                }
+                result.text = "\(lroundf(Float(pulse))) BPM"
+                
+                //POS
+                let l = Int(60 * 1.6)
+                let range = averagergb.count
+                let val: CGFloat = 0
+                var H = Array(repeating: val, count: range)
+                for t in 0..<(abs(range - l)){
+                    // Step 1: Spatial averaging‏
+                    let bc = Array<[CGFloat]>(averagergb[t..<abs(t+l-1)])
+                    let C = transpose(bc)
+                    //Step 2 : Temporal normalization
+                    let meanColor = getMeanRow(C)
+                    let diagMeanColor = Diagonal(meanColor)
+                    let diagMeanColorInverse: [[CGFloat]] = diagMeanColor.reversed()
+                    let Cn = multiply(diagMeanColorInverse, C)
+                    //Step 3 : Projection
+                    let projectionMatrix: [[CGFloat]] = [[0,1,-1],[-2,1,1]]
+                    let S = multiply(projectionMatrix, Cn)
+                    //Step 4: 2D signal to 1D signal
 
-//                result.text = "\(lroundf(Float(pulse * -1.75))) BPM"
+                    let stdVectorRes = standardDeviation(arr: S[0]) / standardDeviation(arr: S[1])
+                    let std = [1.0,stdVectorRes]
+                    var std2D: [[CGFloat]] = []
+                    std2D.append(std)
+                    let P2D = multiply(std2D, S)
+                    let P = P2D[0]
+                    //Step 5: OverLap-Adding
+                    for i in 0..<P.count{
+                        total = total + P[i]
+                    }
+                    let meanP = total/CGFloat(P.count)
+                    let divP = div(standardDeviation(arr: P), (sub(meanP, P)))
+                    H[t..<(t+l-1)] = H[t..<(t+l-1)] + divP
+                }
+                let h = appendH(H)
+                let fft = FFT()
+                let freq = fft.calculate(h, fps: 60)
+                let powerSpec = fft.powerSpectra(h, 60)
+                let first = freq.enumerated().filter({ $0.element > 0.9 }).map({ $0.offset })
+                let last = freq.enumerated().filter({ $0.element < 1.8 }).map({ $0.offset })
+                let firstIndex = first[0]
+                let lastIndex = last[last.count-1]
+                let rangeOfInterest = firstIndex..<(lastIndex)
+                let maxValue = powerSpec.max()
+                let maxIndex = powerSpec.firstIndex(of: maxValue!)
+                let fMax = abs(freq[rangeOfInterest[maxIndex!]])
+                let HR = fMax * 60
+                result.text =  "\(lroundf(Float(HR))) BPM"
                 spinner.stopAnimating()
                 spinner.isHidden = true
                 result.isHidden = false

@@ -1,0 +1,6 @@
+framework module Pods_GraduationProj {
+  umbrella header "Pods-GraduationProj-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -27,13 +27,13 @@ class SettingViewController: UIViewController {
     }
 
     @IBAction func switchAction(_ sender: UISwitch) {
-//        if connectDevice.isOn == true {
-//            if let settingURL = URL(string: UIApplication.openSettingsURLString) {
-//                application.open(settingURL, options: [:]) { _ in
-//                    self.performSegue(withIdentifier: "reloadIdentifer", sender: self)
-//                }
-//            }
-//        }
+        if connectDevice.isOn == true {
+            if let settingURL = URL(string: UIApplication.openSettingsURLString) {
+                application.open(settingURL, options: [:]) { _ in
+                    self.performSegue(withIdentifier: "reloadIdentifer", sender: self)
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -42,18 +42,18 @@ class SettingViewController: UIViewController {
         manger = CBCentralManager()
         manger.delegate = self
         
-//        testState()
+        testState()
     }
-//    func testState()
-//    {
-//        if manger?.state == .poweredOn {
-//            connectDevice.setOn(true, animated: true)
-//            print(".poweredOn")
-//        }else{
-//            connectDevice.setOn(false, animated: true)
-//            print(".poweredOff")
-//        }
-//    }
+    func testState()
+    {
+        if manger?.state == .poweredOn {
+            connectDevice.setOn(true, animated: true)
+            print(".poweredOn")
+        }else{
+            connectDevice.setOn(false, animated: true)
+            print(".poweredOff")
+        }
+    }
     
 }
 extension SettingViewController: CBCentralManagerDelegate {
