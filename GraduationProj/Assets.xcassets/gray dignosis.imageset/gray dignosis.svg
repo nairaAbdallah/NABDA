@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2195" data-name="Rectangle 2195" width="21" height="21" transform="translate(27 26)" fill="#646363"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_59" data-name="Mask Group 59" transform="translate(-27 -26)" clip-path="url(#clip-path)">
+    <g id="iconfinder_heartbeat_5968319" transform="translate(19.931 18.92)">
+      <path id="Path_9469" data-name="Path 9469" d="M26.61,17.367l-1.023-.844a5.037,5.037,0,0,0,1.159-3.2,4.925,4.925,0,0,0-8.672-3.2l-.484.62-.5-.6a4.925,4.925,0,0,0-8.672,3.2,5.037,5.037,0,0,0,1.159,3.2l-1.007.844A6.237,6.237,0,0,1,17.591,8.8a6.241,6.241,0,0,1,9.019,8.572Z" fill="#646363"/>
+      <path id="Path_9470" data-name="Path 9470" d="M17.039,22.556l-2.175-4.71-.8,1.707H7.112V18.243h6.129l1.619-3.53,2.031,4.4L19.53,11.7l2.423,6.557H28.07V19.57H21.037l-1.479-4.026Z" fill="#646363"/>
+      <path id="Path_9471" data-name="Path 9471" d="M18.546,28.07H16.635l-5.441-6.445,1-.836,5.045,6h.7l5.037-6,1.007.836Z" fill="#646363"/>
+    </g>
+  </g>
+</svg>
