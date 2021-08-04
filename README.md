@@ -3,7 +3,7 @@
 ---
 ### NABDA Whole Project 
 
-Overview:
+#### Overview:
 
 Our project consist of 5 parts 
 1. ECG 
@@ -12,11 +12,11 @@ Our project consist of 5 parts
 4. iOS Mobile app
 5. Web app
 
-Introduction: 
+#### Introduction: 
 
 We live in an era where our habits and diet contribute largely to many diseases, especially heart diseases.World Health Organization (WHO) research shows that heart diseases are number one cause of death globally with 31% of all deaths.
 
-Project objectives:
+#### Project objectives:
 
 In our project we use the Digital Twin technology alongside Machine Learning module to analyze the user’s heartbeat and vitals,also we use IoT as in our device with sensors that the user wears and connected to our application and module. We aim the following from our system:
 - For the user to monitor his vitals and heart’s condition in real-time.
@@ -24,7 +24,7 @@ In our project we use the Digital Twin technology alongside Machine Learning mod
 - Automatic alert system for severe arrhythmias when detected.
 - Diagnosing heartbeat using ML in real-time.
 
-Project scope: 
+#### Project scope: 
 
 Our system mainly lies under the approach of Digital Twin, it will also apply the concepts of IoT and mobile developmentto impact the medical field and humans’ everyday activities by understanding users more and provide them with a practical and effective solution.
 
