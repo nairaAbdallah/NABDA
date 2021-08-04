@@ -24,7 +24,7 @@ In our project we use the Digital Twin technology alongside Machine Learning mod
 
 #### Project scope: 
 
-Our system mainly lies under the approach of Digital Twin, it will also apply the concepts of IoT and mobile developmentto impact the medical field and humans’ everyday activities by understanding users more and provide them with a practical and effective solution.
+Our system mainly lies under the approach of Digital Twin, it will also apply the concepts of IoT and mobile development to impact the medical field and humans’ everyday activities by understanding users more and provide them with a practical and effective solution.
 
 ### [NABDA Documentation](https://drive.google.com/file/d/1g9RdVnAbJWu8_b7YihdoFW_RCioFAcvc/view?usp=sharing)
 ### [NABDA Video](https://youtu.be/VR42laXcNaE)
