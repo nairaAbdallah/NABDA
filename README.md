@@ -3,7 +3,7 @@
 ---
 ### NABDA Whole Project 
 
-#### Overview:
+#### Our project consist of :
 1. ECG 
 2. PPG
 3. MRI
