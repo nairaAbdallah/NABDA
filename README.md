@@ -1,7 +1,7 @@
 ### NABDA mobile app is a part of my graduation project 
 ### [NABDA mobile.app documentation](https://drive.google.com/file/d/1CSQNdBhilDsvxB9wf9qUZ6KAiOGexiAs/view?usp=sharing)
 ---
-#### NABDA Whole Project 
+### NABDA Whole Project 
 Introduction: 
 We live in an era where our habits and diet contribute largely to many diseases, especially heart diseases.World Health Organization (WHO) research shows that heart diseases are number one cause of death globally with 31% of all deaths.
 Project objectives:
@@ -13,10 +13,10 @@ In our project we use the Digital Twin technology alongside Machine Learning mod
 Project scope: 
 Our system mainly lies under the approach of Digital Twin, it will also apply the concepts of IoT and mobile developmentto impact the medical field and humans’ everyday activities by understanding users more and provide them with a practical and effective solution.
 
-[NABDA Documentation](https://drive.google.com/file/d/1g9RdVnAbJWu8_b7YihdoFW_RCioFAcvc/view?usp=sharing)
-[NABDA Video](https://youtu.be/VR42laXcNaE)
+### [NABDA Documentation](https://drive.google.com/file/d/1g9RdVnAbJWu8_b7YihdoFW_RCioFAcvc/view?usp=sharing)
+### [NABDA Video](https://youtu.be/VR42laXcNaE)
 ---
-#### Team members:  
+### Team members:  
 - [Abdallah ragab]()
 - [Moutaz Mohamed](https://github.com/Moutaz-Mohamed)
 - [Ahmed Negm](https://github.com/a7mdngm98)
