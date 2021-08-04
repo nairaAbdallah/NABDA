@@ -1,4 +1,4 @@
-### NABDA iOS mobile.app implementation is my rule in our graduation project 
+### NABDA iOS mobile.app is a part of our graduation project 
 ### [NABDA mobile.app documentation](https://drive.google.com/file/d/1CSQNdBhilDsvxB9wf9qUZ6KAiOGexiAs/view?usp=sharing)
 ---
 ### NABDA Whole Project 
@@ -8,7 +8,7 @@ Our project consist of 5 parts
 1. ECG 
 2. PPG
 3. MRI
-4. iOS Mobile app
+##### 4. iOS Mobile app (It's my main rule in project)
 5. Web app
 
 #### Introduction: 
