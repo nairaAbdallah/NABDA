@@ -2,6 +2,16 @@
 ### [NABDA mobile.app documentation](https://drive.google.com/file/d/1CSQNdBhilDsvxB9wf9qUZ6KAiOGexiAs/view?usp=sharing)
 ---
 ### NABDA Whole Project 
+
+Overview:
+
+Our project consist of 4 parts 
+1. ECG 
+2. PPG
+3. MRI
+4. iOS Mobile app
+5. Web app
+
 Introduction: 
 
 We live in an era where our habits and diet contribute largely to many diseases, especially heart diseases.World Health Organization (WHO) research shows that heart diseases are number one cause of death globally with 31% of all deaths.
