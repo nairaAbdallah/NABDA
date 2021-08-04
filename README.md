@@ -30,12 +30,12 @@ Our system mainly lies under the approach of Digital Twin, it will also apply th
 ### [NABDA Video](https://youtu.be/VR42laXcNaE)
 ---
 ### Team members:  
-- [Abdallah ragab]()
+- [Abdallah ragab](https://github.com/abadallah)
 - [Moutaz Mohamed](https://github.com/Moutaz-Mohamed)
 - [Ahmed Negm](https://github.com/a7mdngm98)
 - [Ahmed Elsafty](https://github.com/ahmed0elsafty)
 - [Salem Mohamed](https://github.com/salemmohamad)
-- [Rafat Elrayes]()
+- [Rafat Elrais](https://github.com/RaafatElrais)
 - [Naira Bassam](https://github.com/nairaAbdallah)
 - [Menna Mawed](https://github.com/mennamawed)
 - [Salma Hesham](https://github.com/SalmaHeshaam)
