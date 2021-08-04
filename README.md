@@ -5,7 +5,7 @@
 
 Overview:
 
-Our project consist of 4 parts 
+Our project consist of 5 parts 
 1. ECG 
 2. PPG
 3. MRI
