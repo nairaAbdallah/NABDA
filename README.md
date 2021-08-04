@@ -12,7 +12,7 @@
 
 #### Introduction: 
 
-We live in an era where our habits and diet contribute largely to many diseases, especially heart diseases.World Health Organization (WHO) research shows that heart diseases are number one cause of death globally with 31% of all deaths.
+We live in an era where our habits and diet contribute largely to many diseases, especially heart diseases.World Health Organization (WHO) research shows that heart diseases are number one cause of death globally with 31% of all deaths. Therefore, this disease cannot be taken lightly. Also, heart diseases do not discriminate, it is number one cause of death for several ethnicity like white people, Hispanic, and Black people.
 
 #### Project objectives:
 
