@@ -4,12 +4,11 @@
 ### NABDA Whole Project 
 
 #### Overview:
-### Our project consist of 5 parts 
-#### 1. ECG 
-#### 2. PPG
-#### 3. MRI
-### 4. iOS Mobile app (It's my main rule in project)
-#### 5. Web app
+1. ECG 
+2. PPG
+3. MRI
+4. iOS Mobile app (It's my main rule in project)
+5. Web app
 
 #### Introduction: 
 
